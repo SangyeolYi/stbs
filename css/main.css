@@ -1,0 +1,144 @@
+/* UNIVERASL */
+body{
+  color: #333;
+  font-family: 'Nanum Gothic',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1,4;
+}
+
+img{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  background-color: royalblue;
+  /* position: absolute;
+  top: 0; */
+}
+
+header .inner{
+  max-width: 1100px;
+  width: auto;
+  height: 120px;
+  margin : 0 auto;
+  background-color: white;
+  position: relative;
+}
+
+header .logo{
+  height: 75px;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+
+}
+
+header .sub-menu{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+header .sub-menu ul.menu{
+  display: flex;
+}
+
+header .sub-menu ul.menu li{
+  position: relative;
+}
+
+header .sub-menu ul.menu li::before{
+  
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+header .sub-menu ul.menu li:first-child::before{
+  display: none;
+}
+
+header .sub-menu ul.menu li a{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  padding:11px 16px;
+  display: block;
+  color: #333;
+}
+
+header .sub-menu ul.menu li a:hover{
+  color: #000;
+}
+
+header .sub-menu .search{
+  height: 34px;
+  position: relative;
+  
+}
+
+header .sub-menu .search input{
+  width: 36px;
+  height: 34px;
+  box-sizing: border-box;
+  /* display:block; */
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #777;
+  transition: width .4s;
+}
+
+header .sub-menu .search input:focus{
+  width: 190px;
+  
+}
+
+header .sub-menu .material-icons{
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 5px;
+  transition: all .4s;
+}
+
+header .sub-menu .focused .material-icons{
+  opacity: 0;
+}
+
+header .main-menu{
+  display: flex;
+}
+
+header .main-menu ul{
+  display: flex;
+}
+
+header .main-menu .item{
+
+}
+
+header .main-menu .item .item__name{
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+
+}
+
+header .main-menu .item .item__contents{
+
+}
